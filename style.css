@@ -1,16 +1,11 @@
 * {
     --bg-color: #202124;
-    --hover-color: #303134;
 }
 
 body {
     background: var(--bg-color);
     margin: 0;
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
 }
 
 nav {
@@ -68,43 +63,4 @@ nav {
 .icon-container div:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-}
-
-.center-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.searchbar-container {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    height: 2.5rem;
-    border-radius: 2rem;
-    width: 90%;
-    max-width: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.searchbar-container:hover {
-    border: 1px solid transparent;
-    background-color: var(--hover-color);
-}
-
-.searchbar-container input {
-    height: calc(2.5rem - 0.5em);
-    outline: none;
-    border: none;
-    width: 100%;
-    background-color: transparent;
-    color: white;
-    font-family: poppins, monospace;
-}
-
-.searchbar-container div {
-    width: 3em;
-    display: flex;
-    justify-content: center;
 }
