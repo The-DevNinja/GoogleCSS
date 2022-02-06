@@ -83,6 +83,7 @@ nav {
     border: 1px solid var(--glass-color);
     height: var(--searchbar-height);
     width: 90%;
+    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,4 +108,80 @@ nav {
 .searchbar-container:hover {
     background-color: var(--hover-color);
     border: 1px solid transparent;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons-container input {
+    height: var(--searchbar-height);
+    background-color: var(--hover-color);
+    color: white;
+    font-family: poppins, monospace;
+    padding: 0 1rem;
+    border-radius: 0.2rem;
+    font-weight: 300;
+    border: 1px solid transparent;
+}
+
+.buttons-container input:hover {
+    border: 1px solid var(--glass-color);
+}
+
+footer {
+    background-color: #171717;
+}
+
+.first-footer {
+    height: var(--searchbar-height);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 2rem;
+    opacity: 0.6;
+    font-weight: 300;
+    border-bottom: 1px solid var(--glass-color);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links div:not(:nth-of-type(2)) a {
+    padding: 0 0.5rem;
+}
+
+footer img {
+    height: 0.7rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+@media (max-width: 579px) {
+    .second-links-container {
+        order: -1;
+    }
+}
+
+@media (min-width: 824px) {
+    .footer-links {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
 }
