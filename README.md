@@ -1,2 +1,2 @@
 # google-search-UI-clone
-google UI clone (not finished)
+google UI clone (almost finished)
