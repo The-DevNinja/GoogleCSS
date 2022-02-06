@@ -173,6 +173,13 @@ footer img {
     padding: 1rem;
 }
 
+
+/* make sure to put this */
+
+form {
+    display: none;
+}
+
 @media (max-width: 579px) {
     .second-links-container {
         order: -1;
